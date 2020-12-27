@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>WP-Calc - calculates the number of wallpaper rolls you need</title>
+  <meta name="description" content="Simple web-based program that calculates the number of wallpaper rolls you need">
+  <meta name="author" content="WebDevSwe">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <main>
+        <h1>Wp-Calc</h1>
+        <p>Enter your details to make a calculation</p>
+
+        <form class="wpc-form">
+            <fieldset>
+                <legend>The wallpaper</legend>
+                <div class="wpc-form-input">
+                    <label for="wallpaper-length">Wallpaper length</label>
+                    <input class="wpc-input-value" type="text" id="wallpaper-length" name="wallpaper-length" value="1005">cm
+                </div>
+                <div class="wpc-form-input">
+                    <label for="pattern-length">Pattern length</label>
+                    <input class="wpc-input-value" type="text" id="pattern-length" name="pattern-length" value="20">cm
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Wallpaper wet needed</legend>
+                <div class="wpc-form-input">
+                    <label for="wallpaper-wet-1">Wallpaper wet 1</label>
+                    <input class="wpc-input-value" type="text" id="wallpaper-wet-1" name="wallpaper-wet-1" value="230">cm
+                    <label for="wallpaper-wet-1_quantity">Quantity</label>
+                    <input class="wpc-input-quantity" type="text" id="wallpaper-wet-1_quantity" name="wallpaper-wet-1_quantity" value="1">cm
+                </div>
+                <div class="wpc-form-input">
+                    <label for="wallpaper-wet-2">Wallpaper wet 2</label>
+                    <input class="wpc-input-value" type="text" id="wallpaper-wet-2" name="wallpaper-wet-2" value="270">cm
+                    <label for="wallpaper-wet-2_quantity">Quantity</label>
+                    <input class="wpc-input-quantity" type="text" id="wallpaper-wet-2_quantity" name="wallpaper-wet-2_quantity" value="1">cm
+                </div>
+                <div class="wpc-form-input"></div>
+                    <label for="wallpaper-wet-3">Wallpaper wet 3</label>
+                    <input class="wpc-input-value" type="text" id="wallpaper-wet-3" name="wallpaper-wet-3" value="30">cm
+                    <label for="wallpaper-wet-3_quantity">Quantity</label>
+                    <input class="wpc-input-quantity" type="text" id="wallpaper-wet-3_quantity" name="wallpaper-wet-3_quantity" value="1">cm
+                </div>
+            </fieldset>
+            <p>Press the button to calculate how many wallpaper rolls are needed</p>
+            <button id="uxButtonDoClculation" class="wpc-button" >Calculate</button>
+        </form>
+        <div class="wpc-monitor"></div>
+    </main>
+    <div class="wpc-dev-monitor"></div>
+
+
+
+    
+
+
+
+
+
+
+  <script src="js/wp-calc.js"></script>
+  <script src="js/tester.js"></script>  
+  <script src="js/view.js"></script>  
+</body>
+</html>

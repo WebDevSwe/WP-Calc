@@ -2,9 +2,7 @@
 Simple web-based program that calculates the number of wallpaper rolls you need
 
 ## Clone
-´´´
-git clone https://github.com/WebDevSwe/WP-Calc.git
-´´´
+``git clone https://github.com/WebDevSwe/WP-Calc.git``
 
 ## How to use
 This wallpaper calculator is a standalone web-based software that you can do on your computer without installing anything.
