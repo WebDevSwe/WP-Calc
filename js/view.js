@@ -1,7 +1,8 @@
-gCheckTest = true;
+
+gPrintTestInConsole = true;
 
 $(function() {
-    if(gCheckTest){
+    if(gPrintTestInConsole){
         doTest();
     }
     activateButtons();
@@ -31,7 +32,9 @@ function activateButtons(){
 
         wallpaperWetArray = wallpaperWetArray.concat( makeWetArray(wallpaperWet_3, wallpaperWet_3_quantity) );
 
-        calculateWallpaperRollsNeeded(wallpaperLength, patternLength, wallpaperWetArray);
+        let rollsNeeded = calculateWallpaperRollsNeeded(wallpaperLength, patternLength, wallpaperWetArray);
+
+        $("#uxMonitor").html(`<p>Rolls needed is ${rollsNeeded} </p>`);
 
 
     });
