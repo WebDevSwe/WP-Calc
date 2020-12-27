@@ -1,5 +1,4 @@
-
-gPrintTestInConsole = true;
+gPrintTestInConsole = false;
 
 $(function() {
     if(gPrintTestInConsole){
@@ -34,7 +33,12 @@ function activateButtons(){
 
         let rollsNeeded = calculateWallpaperRollsNeeded(wallpaperLength, patternLength, wallpaperWetArray);
 
-        $("#uxMonitor").html(`<p>Rolls needed is ${rollsNeeded} </p>`);
+        if(rollsNeeded){
+            $("#uxMonitor").html(`<p>In total, you need ${rollsNeeded} rolls off the wallpaper.</p>`);
+        }else{
+            $("#uxMonitor").html(`<p>Something went wrong. Change your values and test again!</p>`);
+        }
+        
 
 
     });

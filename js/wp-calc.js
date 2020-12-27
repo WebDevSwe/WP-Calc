@@ -55,7 +55,6 @@ function makeWetArray(wallpaperWet, quantity){
         return false;
     }
 
-    
     for (n = 0; n < quantity; n++) {
         wetArray.push(wallpaperWet);
     }

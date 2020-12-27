@@ -6,12 +6,8 @@ function doTest(){
     console.log("3. "+ tester(calculateWallpaperRollsNeeded, 2 , [100, 2, [30,30,30,30]]) );
     console.log("4. "+ tester(calculateWallpaperRollsNeeded, 3 , [1005, 20, [300,300,240,240,240, 250, 120, 280]]) );
     console.log("5. "+ tester(calculateWallpaperRollsNeeded, 1 , [1005, 0, [250]]) );
-
-
-    console.timeEnd();
-   
-
     
+    console.timeEnd();
 }
 
 function tester( testFunction, expetResolt, testArray){
